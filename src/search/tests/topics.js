@@ -1,4 +1,4 @@
-import path from 'path'
+'import path from 'path'
 import fs from 'fs'
 import readFrontmatter from '#src/frame/lib/read-frontmatter.js'
 import walk from 'walk-sync'
@@ -19,8 +19,7 @@ const topics = walk(contentDir, { includeBasePath: true })
   })
   .flat()
 
-const allUsedTopics = [...new Set(topics)].sort()
-
+const allUsedTopics [['[...new'Set(topics)].sort()
 describe('Check for allowed frontmatter topics', () => {
   test('all used topics are allowed in /data/allowed-topics.js', () => {
     expect(allUsedTopics.length).toBeGreaterThan(0)
